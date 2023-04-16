@@ -24,9 +24,21 @@ http://janeliascicomp.github.io/SharkViewer/
 ```zsh
 npm install
 ```
-1. Start up a test server
+1. Start up a test server (default port8080)
 ```zsh
 npm run start
+
+
+```
+OR  指定端口号
+```zsh
+# npm start命令的具体运行指令，可以在package.json里找到
+# start 本质上就是运行  webpack serve --config webpack.config.js
+# 如果要更改端口后，可以在package.json将
+# webpack serve --config webpack.config.js 改为 webpack serve --config webpack.config.js --port xxxx
+
+# 或者启动命令时指定端口号
+npm start -- --port 8000 
 ```
 1. Click 'Choose File' button to load a SWC file.
 
